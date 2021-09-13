@@ -1,0 +1,25 @@
+<apex:page controller="NewCustomerCon" sidebar="false" tabStyle="Opportunity" >
+                        <apex:sectionHeader title="New Customer Deal Information" subtitle="step 2 to 3"/>
+                        <apex:form >
+                        <apex:pageblock >
+                        <apex:pageBlockButtons >
+                        <apex:commandButton value="Previous" action="{!step1}"/>
+                        <apex:commandButton value="Next" action="{!step3}"/>
+                        <apex:commandButton value="cancel" action="{!cancel}" immediate="true"/>
+                        </apex:pageBlockButtons>
+                        <apex:pageBlockSection title="Opportunity Information">
+                        <apex:inputField value="{!opportunity.name}"/>
+                        <apex:inputField value="{!opportunity.stagename}"/>
+                        <apex:inputField value="{!opportunity.closedate}"/>
+                         <apex:inputField value="{!opportunity.amount}"/>
+                        
+                        </apex:pageBlockSection>
+                       <apex:pageBlockSection title="Contact Role Information">
+               <apex:inputField value="{!role.role}"/> 
+                        </apex:pageblockSection>
+                     
+                        
+                        </apex:pageblock>
+                        </apex:form>
+                        
+                        </apex:page>

@@ -1,0 +1,33 @@
+<apex:page controller="NewCustomerCon" name="SLDS_template" showHeader="false" standardStylesheets="false"  >
+    <apex:form >
+    <apex:sectionHeader title="New Customer Information" subtitle="Step 1 of 3"/>
+    <apex:pageBlock >
+    <apex:pageblockButtons >
+    <apex:commandButton value="Next" action="{!step2}"/>
+    <apex:commandButton value="cancel" action="{!cancel}" immediate="true"/>
+    </apex:pageblockButtons>
+    <apex:pageBlockSection title="Account Information" >
+    <apex:inputfield value="{!account.name}"/>
+    <apex:inputfield value="{!account.phone}"/>
+    <apex:inputfield value="{!account.industry}"/>
+    <apex:inputfield value="{!account.numberofemployees}"/>
+    <apex:inputField value="{!account.annualrevenue}"/>
+    <apex:inputField value="{!account.Ownership}"/>
+   
+  
+    
+   
+    </apex:pageBlockSection>
+    <apex:pageBlockSection title="Contact Information">
+    <apex:inputfield value="{!contact.firstname}"/>
+    <apex:inputField value="{!contact.lastname}"/>
+     <apex:inputField value="{!contact.email}"/>
+      <apex:inputField value="{!contact.phone}"/>
+       <apex:inputField value="{!contact.title}"/>
+        <apex:inputField value="{!contact.department}"/>
+    </apex:pageBlockSection>
+    
+    </apex:pageBlock>
+    </apex:form>
+    
+    </apex:page>

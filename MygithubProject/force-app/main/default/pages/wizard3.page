@@ -1,0 +1,40 @@
+<apex:page controller="NewCustomerCon" sidebar="false" tabStyle="Account">
+<apex:form >
+<apex:sectionHeader title="Customer Information Confirmation" subtitle="Step 3 of 3"/>
+<apex:pageBlock >
+<apex:pageblockButtons >
+<apex:commandButton value="Previous" action="{!step2}"/>
+<apex:commandButton value="Save" action="{!Submit}"/>
+<apex:commandButton value="cancel" action="{!cancel}" immediate="true"/>
+
+</apex:pageblockButtons>
+<apex:pageBlockSection title="Account Information" > 
+<apex:outputField value="{!account.phone}"/>
+ <apex:outputField value="{!account.industry}"/>
+ <apex:outputField value="{!account.NumberofEmployees}"/>
+<apex:outputField value="{!account.annualrevenue}"/>
+<apex:outputField value="{!account.Ownership}"/>
+</apex:pageBlockSection>
+           <apex:pageBlockSection title="Contact Information">
+               <apex:outputField value="{!contact.firstname}"/>
+               <apex:outputField value="{!contact.lastname}"/>
+               <apex:outputField value="{!contact.email}"/>
+               <apex:outputField value="{!contact.phone}"/>
+               <apex:outputField value="{!contact.title}"/>
+               <apex:outputField value="{!contact.department}"/>
+           </apex:pageBlockSection>
+            <apex:pageBlockSection title="Opportunity Information">
+               <apex:outputField value="{!opportunity.name}"/>
+               <apex:outputField value="{!opportunity.stagename}"/>
+               <apex:outputField value="{!opportunity.closedate}"/>
+               <apex:outputField value="{!opportunity.amount}"/>
+           </apex:pageBlockSection>
+           <apex:pageBlockSection title="Contact Role Information">
+               <apex:outputField value="{!role.role}"/>
+            </apex:pageBlockSection>
+
+</apex:pageBlock>
+</apex:form>
+
+  
+</apex:page>

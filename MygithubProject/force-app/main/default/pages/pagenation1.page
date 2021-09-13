@@ -1,0 +1,6 @@
+<apex:page controller="pagenationcon" sidebar="false">
+
+  <apex:pageBlock title="opportunities">
+  
+  </apex:pageBlock>
+</apex:page>

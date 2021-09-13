@@ -1,0 +1,12 @@
+<aura:component implements="flexipage:availableForRecordHome" access="global">
+    <aura:attribute  name="value1"  type="integer"/>
+        <aura:attribute  name="value2"  type="integer"/>
+
+    <ui:inputnumber label="enter first value" value= "{!v.value1}" />
+        <ui:inputnumber label="enter second value" value= "{!v.value2}" />
+
+<lightning:button label="submit" onclick="{!c.add}"/>
+
+    
+	
+</aura:component>

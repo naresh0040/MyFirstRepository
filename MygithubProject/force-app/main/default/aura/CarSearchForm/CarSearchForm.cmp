@@ -1,0 +1,20 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" >
+	
+    
+
+             <lightning:layout horizontalAlign="center">
+            <lightning:layoutItem padding="around-medium">
+                <lightning:select name="selectItem" aura:id="cartype" label="All types" variant="label-hidden" >
+                    <option value="" text="All types"/>
+                    <option value="" text="Sports Car"/>
+                    <option value="" text="Luxary car"/>
+               </lightning:select>
+                 </lightning:layoutItem>
+                 <lightning:layoutItem padding="around-medium">
+                <lightning:button variant="brand" label="Search" />
+                <lightning:button variant="neutral" label="New" />
+
+                 </lightning:layoutItem>
+    </lightning:layout>
+              
+</aura:component>
