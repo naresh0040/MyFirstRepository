@@ -1,6 +1,6 @@
 public class cat 
 {
-
+// added line to test git commit.
     private string name;
     private integer size ;
     
